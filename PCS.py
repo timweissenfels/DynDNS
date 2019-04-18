@@ -1,19 +1,29 @@
 import urllib
 import json
 import requests
+import argparse
 
 response = requests.get("https://api.myip.com")
 json_data = json.loads(response.text)
 
 ip = json_data['ip']
 
-hostname = "test-pcs.dynv6.net"
-account = "t1wSt5VvuxTY2x-gniA1PAyuHxe4E-"
+parser = argparse.ArgumentParser(description='Update Skript fuer Dynv6')
+parser.add_argument('-u',"--url",type=str,
+help='Volle URL der Seite/Domain Beispiel: pcs-test.dynv6.net')
+parser.add_argument('-t',"--token",type=str, help='\nToken zur Validierung des Updates der IP')
+
+args = parser.parse_args()
+
+hostname = args.url
+account = args.token
+
 parameters = {'hostname': hostname, 'token': account, 'ipv6': ip}
 
 response = requests.get('https://dynv6.com/api/update?{}'.format(
 urllib.urlencode(parameters)))
 
-print(response)
+assert response.status_code == 200, response.content
+print response.content
 
-#url = 'https://dynv6.com/api/update?token='.account.'&hostname='.hostname.'&ipv6='.ip;
+#https://github.com/ticosax/dynv6-client/blob/master/client.py
