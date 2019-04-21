@@ -8,4 +8,4 @@ install:
         pip install requests
 
 script:
-        pytest
+        python setup.py build
