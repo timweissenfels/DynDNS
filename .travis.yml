@@ -6,6 +6,6 @@ python:
 install:
 #        pip install -r requirments.txt
         pip install requests
-
+        pip install cx_Freeze
 script:
         python setup.py build
