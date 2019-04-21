@@ -5,7 +5,7 @@ python:
 
 install:
 #        pip install -r requirments.txt
-        pip install -r requests
+        pip install requests
 
 script:
         pytest
