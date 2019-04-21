@@ -2,7 +2,7 @@ from cx_Freeze import setup, Executable
 
 base = None    
 
-executables = [Executable("PCS.py", base=base)]
+executables = [Executable("Updater.py", base=base)]
 
 packages = ["idna","urllib","requests","argparse"]
 options = {
@@ -12,7 +12,7 @@ options = {
 }
 
 setup(
-    name = "PCS",
+    name = "Updater-linux",
     options = options,
     version = "1.0",
     description = '<Simple DynDNS Update Script>',
