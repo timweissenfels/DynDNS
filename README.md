@@ -123,9 +123,9 @@ Alles andere sollte mit dem ausgegebenen Errorn Googlebar sein.
  
 ## Abhängigkeiten des Builds
  
-* [cx_Frezze](https://github.com/anthony-tuininga/cx_Freeze) - Benutzt für den Linux build
-* [pyinstaller](https://github.com/pyinstaller/pyinstaller) - Benutzt für den Windows build
-* [Requests/Python-Libary](https://github.com/kennethreitz/requests) - Benutzt für HTTP Request im Python Skript
+* [cx_Frezze] (https://github.com/anthony-tuininga/cx_Freeze) - Benutzt für den Linux build
+* [pyinstaller] (https://github.com/pyinstaller/pyinstaller) - Benutzt für den Windows build
+* [Requests/Python-Libary] (https://github.com/kennethreitz/requests) - Benutzt für HTTP Request im Python Skript
  
 ## Autor
  
