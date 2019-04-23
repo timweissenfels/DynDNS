@@ -1,10 +1,10 @@
 # Dynamisches DNS Skript 
-Einfaches DynDNS Update Skript mit CLI für https://dynv6.com/
+Einfaches DynDNS Update Skript mit CLI für <https://dynv6.com/>
  [![Build Status](https://travis-ci.com/ChooseYourPlan/DynDNS.svg?token=be6Muy6Mi7qz4Sp8pyY8&branch=master)](https://travis-ci.com/ChooseYourPlan/DynDNS) [![Build status](https://ci.appveyor.com/api/projects/status/qha8twuxuw8kchs3?svg=true)](https://ci.appveyor.com/project/ChooseYourPlan/dyndns)[![BCH compliance](https://bettercodehub.com/edge/badge/ChooseYourPlan/DynDNS?branch=master)](https://bettercodehub.com/)
  
 ## Vorbereitung
  
-Zur Erstellung eines Hostnames auf https://dynv6.com/ wird ein Benutzerkonto benötigt.
+Zur Erstellung eines Hostnames auf <https://dynv6.com/> wird ein Benutzerkonto benötigt.
 
 #### Host erstellen 
 Nach der Einrichtung eins Benutzerkontos muss ein neuer Host erstellt werden.
@@ -29,9 +29,9 @@ Jetzt muss sich folgendes gemerkt werden einmal der **Token** und der eigene **H
 Token und Hostname gemerkt geht es weiter mit der Beschaffung des Programms.
 
 Hierzu wahlweise mittels Zip Download von:
-https://github.com/ChooseYourPlan/DynDNS/archive/master.zip 
+<https://github.com/ChooseYourPlan/DynDNS/archive/master.zip> 
 oder wenn nur eine Standalone .exe gewünscht ist: 
-https://github.com/ChooseYourPlan/DynDNS/raw/master/dist/Updater.exe
+<https://github.com/ChooseYourPlan/DynDNS/raw/master/dist/Updater.exe>
 
 Zur Not über den Github Download Button:
 
@@ -136,4 +136,4 @@ Alles andere sollte mit dem ausgegebenen Errorn Googlebar sein.
 Dieses Projekt ist mit der GPL-3.0 License lizensiert [LICENSE.md](LICENSE.md) 
 ## Inspiration
  
-* https://github.com/ticosax/dynv6-client/blob/master/client.py
+* <https://github.com/ticosax/dynv6-client/blob/master/client.py>
