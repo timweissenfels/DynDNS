@@ -25,5 +25,3 @@ urllib.urlencode(parameters)))
 
 assert response.status_code == 200, response.content
 print response.content
-
-#https://github.com/ticosax/dynv6-client/blob/master/client.py
