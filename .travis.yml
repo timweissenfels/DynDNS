@@ -7,6 +7,6 @@ before_install:
         - pip install requests
         - pip install cx_Freeze
         - pip install --upgrade sentry-sdk==0.7.14
-
+        - pip install ipaddr
 script:
         python setup.py build
