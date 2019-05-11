@@ -6,6 +6,7 @@ python:
 before_install:
         - pip install requests
         - pip install cx_Freeze
+        - pip install --upgrade sentry-sdk==0.7.14
 
 script:
         python setup.py build
