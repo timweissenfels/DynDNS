@@ -2,6 +2,8 @@ import urllib
 import json
 import requests
 import argparse
+import sentry_sdk
+sentry_sdk.init("https://5e1eb70302864954b3c653de2919c3b7@sentry.io/1457409")
 
 response = requests.get("https://api.myip.com")
 json_data = json.loads(response.text)
