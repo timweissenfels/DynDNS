@@ -1,5 +1,6 @@
 import urllib
 import json
+import ipaddr
 import requests
 import argparse
 import sentry_sdk
@@ -9,7 +10,9 @@ sentry_sdk.init("https://5e1eb70302864954b3c653de2919c3b7@sentry.io/1457409")
 response = requests.get("https://api.myip.com")
 json_data = json.loads(response.text)
 
-ip = json_data['ip']
+ip = ipaddr.IPAddress(json_data['ip'])
+
+print '%s is a correct IP%s address.' % (ip, ip.version)
 
 parser = argparse.ArgumentParser(description='Update Skript fuer Dynv6')
 parser.add_argument('-u',"--url",type=str,
