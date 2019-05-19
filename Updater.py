@@ -24,8 +24,16 @@ args = parser.parse_args()
 hostname = args.url
 account = args.token
 
-parameters = {'hostname': hostname, 'token': account, 'ipv6': ip}
+if ip.version == 6:
+    parameters = {'hostname': hostname, 'token': account, 'ipv6': ip}
 
+elif ip.version == 4:
+    parameters = {'hostname': hostname, 'token': account, 'ipv4': ip}
+
+else:
+    print 'No Valid Address ' 
+    print ip.version 
+ 
 response = requests.get('https://dynv6.com/api/update?{}'.format(
 urllib.urlencode(parameters)))
 
